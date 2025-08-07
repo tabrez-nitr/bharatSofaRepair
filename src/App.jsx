@@ -1,5 +1,6 @@
 
 import Navbar from "./components/Navbar"
+import HeroSection from "./components/HeroSection"
 
 function App() {
 
@@ -8,6 +9,10 @@ function App() {
     <div>
          
         <Navbar/>
+
+        <main className="pt-16">
+        <HeroSection/>
+        </main>
 
 
          {/* phone call button */}
