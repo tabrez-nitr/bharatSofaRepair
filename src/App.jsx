@@ -1,17 +1,22 @@
 
-
+import Navbar from "./components/Navbar"
 
 function App() {
 
 
   return (
     <div>
+         
+        <Navbar/>
+
+
+         {/* phone call button */}
         <a href="tel:+917846940025">
          <button>
           <i className="text-3xl text-[#3D74B6] fixed bottom-5 left-5 ri-phone-fill"></i>
          </button>
          </a>
-
+          {/* whatsapp button  */}
          <a href="https://wa.me/917846940025?text=Hi%2C%20I%20need%20a%20sofa%20repair%20service" 
           target="_blank" rel="noopener noreferrer">
          <button>
