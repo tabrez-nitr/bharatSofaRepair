@@ -12,11 +12,15 @@ function HeroSection() {
     <div className="relative text-black">
 
       {/* Custom Navigation Buttons */}
-      <div className="swiper-button-prev absolute left-4 top-1/2 z-10 transform -translate-y-1/2 cursor-pointer !text-[#F5DEB3]">
-        <ChevronLeft size={32} />
+     <div className="hero-swiper-prev absolute left-4 top-1/2 z-10 transform -translate-y-1/2 
+                      cursor-pointer text-[#F5DEB3] bg-black/25 rounded-full
+                      w-10 h-10 flex items-center justify-center">
+        <ChevronLeft size={24} />
       </div>
-      <div className="swiper-button-next absolute right-4 top-1/2 z-10 transform -translate-y-1/2 cursor-pointer !text-[#F5DEB3]">
-        <ChevronRight size={32} />
+      <div className="hero-swiper-next absolute right-4 top-1/2 z-10 transform -translate-y-1/2 
+                      cursor-pointer text-[#F5DEB3] bg-black/25 rounded-full
+                      w-10 h-10 flex items-center justify-center">
+        <ChevronRight size={24} />
       </div>
 
       <Swiper
@@ -28,17 +32,25 @@ function HeroSection() {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
-        className="h-[35rem] w-full"
+        className="h-[37rem] w-full"
       >
-        <SwiperSlide className="bg-[url('src/assets/SofaPhoto-1.jpg')] bg-cover bg-center flex items-center justify-center text-4xl font-bold">
-          <h1 className="text-center mt-18 text-white">"Bring Your Sofa Back to Life!"</h1>
+        <SwiperSlide className="bg-[url('src/assets/SofaPhoto-1.jpg')] bg-cover bg-center px-7 flex items-center justify-center text-5xl font-bold">
+          <h1 className="  mt-33 opacity-80 mb-4">New <br /> sofas built <br />to fit your space & style</h1>
+          <p className='text-[12px] text-[white]/85 font-normal '>Modern designs | Premium comfort | Affordable luxury</p>
+          <button className='border-1 p-4 text-[15px] mt-10 rounded-2xl text-[#F5DEB3] '>WhatsApp Chat</button>
         </SwiperSlide>
-        <SwiperSlide className="bg-[url('src/assets/SofaPhoto-2.webp')] bg-cover bg-center flex items-center justify-center text-4xl font-bold">
-          <h1 className="text-center mt-18 text-white">"Expert Repair with a Personal Touch"</h1>
+
+        <SwiperSlide className="bg-[url('src/assets/SofaPhoto-11.jpg')] bg-cover bg-center p-7 flex items-center justify-center text-5xl font-bold">
+          <h1 className=" mt-30 font-bold opacity-80 mb-3 ">Expert Repairs to Renew Your Sofa</h1>
+          <p className='text-[12px] text-[white]/85 font-normal '>Skilled work| fresh fabrics| flawless finishes </p>
+          <button className='border-1 p-4 text-[15px] mt-8 font-normal rounded-2xl text-[#F5DEB3]'>Book Re-pair</button>
         </SwiperSlide>
-        <SwiperSlide className="bg-[url('src/assets/SofaPhoto-3.webp')] bg-cover bg-center flex items-center justify-center text-4xl font-bold">
-          <h1 className="text-center mt-18 text-white">"Old Sofa, New Life"</h1>
+        <SwiperSlide className="bg-[url('src/assets/SofaPhoto-5.jpg')] p-7 bg-cover bg-center flex items-center justify-center text-5xl font-bold">
+          <h1 className=" mt-30 opacity-80">Give <br /> Your Sofa <br />A Fresh  <br />New Look</h1>
+          <p className='text-[12px] text-white font-normal'>Premium fabric replacements in styles you’ll love.</p>
+          <button className='p-4 border-1 text-[15px] mt-7 opacity-90 rounded-2xl text-[#F5DEB3]'>Change Fabric</button>
         </SwiperSlide>
+        
       </Swiper>
     </div>
   );
