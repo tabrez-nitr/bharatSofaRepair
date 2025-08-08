@@ -1,5 +1,8 @@
 
-
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import 'remixicon/fonts/remixicon.css';
 
 
 @keyframes soft-ripple {
@@ -20,5 +23,41 @@
 .smooth-ripple {
   animation: soft-ripple 2s ease-in-out infinite;
 }
-@import "tailwindcss";
-@import 'remixicon/fonts/remixicon.css'
+
+
+ /* .swiper-button-next,
+ .swiper-button-prev  */
+  /* color: #F5DEB3  !important; /* For text-based arrows */
+  /* filter: brightness(0) invert(1); Turns black arrow to white */ */
+
+
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+/* Active pagination dot */
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  margin: 0 6px !important;
+  background-color: white !important;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #F5DEB3 !important;
+  opacity: 1 !important;
+  transform: scale(1.2);
+}
+
+
+
+
+
+/* pagination color  */
+
