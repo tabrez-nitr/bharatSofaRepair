@@ -26,8 +26,8 @@ function HeroSection() {
       <Swiper
         modules={[Navigation, Autoplay, Pagination]}
         navigation={{
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.hero-swiper-next',
+          prevEl: '.hero-swiper-prev',
         }}
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}

@@ -1,6 +1,7 @@
 
 import Navbar from "./components/Navbar"
 import HeroSection from "./components/HeroSection"
+import AboutUs from "./components/AboutUs"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <main className="pt-16">
         <HeroSection/>
         </main>
+        <AboutUs/>
         
 
     <div className="fixed bottom-5 left-5 z-50">
