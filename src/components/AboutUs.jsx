@@ -19,7 +19,7 @@ function AboutUs() {
                </div>
                {/* Title */}
                <div className='mt-4'>
-                    <h1 className='text-2xl opacity-80 font-semibold text-center'>10+ Years Of Experience</h1>
+                    <h1 className='text-2xl opacity-70 font-semibold text-center'>10+ Years Of Experience</h1>
                     <br />
                     <p className='p-3 font-thin'>
                      We’ve helped countless homes upgrade their comfort and style. Every sofa is built or repaired with precision, using premium materials and skilled workmanship. Our designs blend durability with timeless elegance, ensuring your sofa stays beautiful for years.
