@@ -8,7 +8,7 @@ function AboutUs() {
         <h1 className='text-4xl font-medium opacity-80 border-b-4 border-[#F5DEB3]'>About Us</h1>
       </div>
         
-      <div className='flex flex-wrap gap-9 justify-center mt-8 p-2'>
+      <div className='flex flex-wrap gap-9 justify-center mt-8 p-4'>
             
 
              {/* cards for about us  */}
