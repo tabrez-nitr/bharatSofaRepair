@@ -32,7 +32,7 @@ function HeroSection() {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
-        className="h-[37rem] w-full"
+        className="h-[38rem] w-full"
       >
         <SwiperSlide className="bg-[url('src/assets/SofaPhoto-1.jpg')] bg-cover bg-center px-7 flex items-center justify-center text-5xl font-bold">
           <h1 className="  mt-33 opacity-80 mb-4">New <br /> sofas built <br />to fit your space & style</h1>
