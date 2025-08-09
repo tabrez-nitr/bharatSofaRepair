@@ -18,7 +18,7 @@ function Navbar() {
       {/* NavBar for Mobile Phones  */}
       <div className='relative z-50'>
     <div className=" md:hidden fixed top-0 w-full bg-[#2C2C2C] text-[#F5DEB3] px-6 py-4 flex justify-between items-center">
-      <div className="text-xl  font-bold"><i className="ri-sofa-fill"></i>Bharat</div>
+      <div className="text-xl  font-bold"><i className="ri-sofa-fill"></i>Bharat <br /><p className='text-[10px] font-normal text-white/80'>Sector-50, Noida</p></div>
       <div className="md:hidden">
         <button onClick={toggleMenu}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
