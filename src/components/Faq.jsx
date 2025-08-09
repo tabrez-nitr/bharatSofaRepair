@@ -4,13 +4,13 @@ const Accordion = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-300">
+    <div className="border-b border-[black]/30">
       {/* Header */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full flex justify-between items-center py-4 text-left focus:outline-none"
       >
-        <span className="text-lg font-semibold text-black">{title}</span>
+        <span className="text-lg font-semibold text-black/80">{title}</span>
         <svg
           className={`w-5 h-5 transform transition-transform duration-300 ${
             isOpen ? "rotate-180" : "rotate-0"
@@ -38,7 +38,7 @@ const Accordion = ({ title, content }) => {
 function Faq() {
   return (
     <div className="max-w-2xl mx-auto p-4 mt-15 mb-10 text-[black]/60">
-      <h2 className="text-2xl font-bold mb-6 text-center text-[black]/80 border-b-3 border-[#DEB887]">
+      <h2 className="text-2xl font-bold mb-6 text-center text-[black]/80 border-b-3 border-[#DEB887]/80">
         Frequently Asked Questions
       </h2>
 
@@ -56,7 +56,7 @@ function Faq() {
       />
       <Accordion
         title="How long does a sofa repair take?"
-        content="Most repairs are completed within 3–5 days, depending on the complexity."
+        content="Most repairs are completed within 1-3 days, depending on the complexity."
       />
     </div>
   );
