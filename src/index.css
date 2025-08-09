@@ -1,8 +1,30 @@
-
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
 @import "tailwindcss";
 @import "swiper/css";
 @import "swiper/css/pagination";
 @import 'remixicon/fonts/remixicon.css';
+
+
+/* infinte scroll */
+:root {
+  --animation-duration: 40s;
+  --animation-direction: normal;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation-name: scroll;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: var(--animation-direction);
+}
+
 
 
 @keyframes soft-ripple {

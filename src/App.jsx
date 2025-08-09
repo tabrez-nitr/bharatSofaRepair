@@ -2,19 +2,36 @@
 import Navbar from "./components/Navbar"
 import HeroSection from "./components/HeroSection"
 import AboutUs from "./components/AboutUs"
-
+import Services from "./components/Services"
+import Faq from "./components/Faq"
+import Footer from "./components/Footer"
+import { useScroll , motion } from "framer-motion"
+import Reviews from "./components/Reviews"
 function App() {
 
+    const { scrollYProgress } = useScroll()
 
   return (
     <div>
          
         <Navbar/>
-
         <main className="pt-16">
         <HeroSection/>
         </main>
+
+        {/* scroll bar at the top  */}
+        <motion.div  className="bg-[#f8d493]  w-full h-[10px] origin-left fixed top-17 left-0"
+        style={{
+          scaleX : scrollYProgress
+        }}>
+
+        </motion.div>
+        <Services/>
         <AboutUs/>
+        <Reviews/>
+        
+        <Faq/>
+        <Footer/>
         
 
     <div className="fixed bottom-5 left-5 z-50">
