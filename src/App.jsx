@@ -7,6 +7,10 @@ import Faq from "./components/Faq"
 import Footer from "./components/Footer"
 import { useScroll , motion } from "framer-motion"
 import Reviews from "./components/Reviews"
+import CompareImage from "./components/CompareImage"
+import Gallery from "./components/Gallery"
+
+
 function App() {
 
     const { scrollYProgress } = useScroll()
@@ -20,7 +24,7 @@ function App() {
         </main>
 
         {/* scroll bar at the top  */}
-        <motion.div  className="bg-[#f8d493]  w-full h-[10px] origin-left fixed top-17 left-0"
+        <motion.div  className="bg-[#f8d493] z-25  w-full h-[10px] origin-left fixed top-17 left-0"
         style={{
           scaleX : scrollYProgress
         }}>
@@ -28,8 +32,9 @@ function App() {
         </motion.div>
         <Services/>
         <AboutUs/>
+        <CompareImage/>
         <Reviews/>
-        
+        <Gallery/>
         <Faq/>
         <Footer/>
         

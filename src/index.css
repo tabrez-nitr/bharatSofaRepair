@@ -4,6 +4,11 @@
 @import "swiper/css";
 @import "swiper/css/pagination";
 @import 'remixicon/fonts/remixicon.css';
+ 
+/* smooth scroll effect while navigating  */
+html {
+  scroll-behavior: smooth;
+}
 
 
 /* infinte scroll */

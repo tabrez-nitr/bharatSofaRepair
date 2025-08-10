@@ -14,7 +14,7 @@ function CompareImage() {
          firstImage='src/assets/After-1.jpeg'
          secondImage='src/assets/Before-1.jpeg'
          className="h-90  w-full rounded-lg shadow-lg"
-         initialSliderPercentage={35}
+         initialSliderPercentage={40}
          slideMode="drag"
          showHandlebar={true}
          />
