@@ -31,7 +31,7 @@ function AboutUs() {
   }
 
   return (
-    <div>
+    <div id="about">
       <div className="flex justify-center mt-10">
         <h1 className="text-4xl font-medium opacity-80 border-b-4 border-[#F5DEB3]">
           About Us

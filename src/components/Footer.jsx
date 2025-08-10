@@ -18,6 +18,7 @@ function Footer() {
 
   return (
     <motion.div
+     id="contact"
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={controls}

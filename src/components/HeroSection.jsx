@@ -9,7 +9,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 function HeroSection() {
   return (
-    <div className="relative text-black">
+    <div id='home' className="relative text-black">
 
       {/* Custom Navigation Buttons */}
      <div className="hero-swiper-prev absolute left-4 top-1/2 z-10 transform -translate-y-1/2 

@@ -51,7 +51,7 @@ function Services() {
   };
 
   return (
-    <div className='mt-10'>
+    <div id='services' className='mt-15'>
       <div className='flex justify-center mb-8 font-semibold'>
         <h1 className='text-4xl border-b-4 border-[#F5DEB3] opacity-75'>Our Services</h1>
       </div>
