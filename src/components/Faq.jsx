@@ -37,8 +37,8 @@ const Accordion = ({ title, content }) => {
 
 function Faq() {
   return (
-    <div className="max-w-2xl mx-auto p-4 mt-15 mb-10 text-[black]/60">
-      <h2 className="text-2xl font-bold mb-6 text-center text-[black]/80 border-b-3 border-[#DEB887]/80">
+    <div className="max-w-2xl mx-auto p-4 mt-5 mb-10 text-[black]/60">
+      <h2 className="text-2xl font-bold mb-6 text-center text-[black]/80 border-b-3 border-[#DEB887]">
         Frequently Asked Questions
       </h2>
 

@@ -13,7 +13,7 @@ function CompareImage() {
          <Compare 
          firstImage='src/assets/After-1.jpeg'
          secondImage='src/assets/Before-1.jpeg'
-         className="h-96  w-full rounded-lg shadow-lg"
+         className="h-90  w-full rounded-lg shadow-lg"
          initialSliderPercentage={35}
          slideMode="drag"
          showHandlebar={true}
@@ -24,7 +24,7 @@ function CompareImage() {
          <Compare 
          firstImage='src/assets/AfterRepair.jpg'
          secondImage='src/assets/BeforeRepair.jpg'
-         className="h-96  w-full rounded-lg shadow-lg"
+         className="h-90  w-full rounded-lg shadow-lg"
          initialSliderPercentage={40}
          slideMode="drag"
          showHandlebar={true}

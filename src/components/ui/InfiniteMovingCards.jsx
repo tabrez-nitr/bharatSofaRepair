@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { cn } from "../lib/utils";
+import { cn } from "../../lib/utils"; 
+
 
 export function InfiniteMovingCards({
   items,
@@ -59,7 +60,7 @@ export function InfiniteMovingCards({
         {items.map((item) => (
           <li
             key={item.name}
-            className="relative w-[350px] h-[250px] shrink-0 rounded-2xl border shadow-2xl border-[#F5DEB3]/30 bg-white px-8 py-6 md:w-[450px]"
+            className="relative w-[350px] h-[250px] shrink-0 rounded-2xl border shadow-2xl border-[black]/10 bg-white px-8 py-6 md:w-[450px]"
           >
             <blockquote>
               <div className="flex flex-col justify-between h-full">
