@@ -16,8 +16,8 @@ function CompareImage() {
       </div>
         <div className='p-5'>
          <Compare 
-         firstImage='src/assets/After-1.jpeg'
-         secondImage='src/assets/Before-1.jpeg'
+         firstImage={sofaAfter1}
+         secondImage={sofaBefor1}
          className="h-90  w-full rounded-lg shadow-lg"
          initialSliderPercentage={40}
          slideMode="drag"
@@ -27,8 +27,8 @@ function CompareImage() {
 
           <div className='px-5 mt-4'>
          <Compare 
-         firstImage='src/assets/AfterRepair.jpg'
-         secondImage='src/assets/BeforeRepair.jpg'
+         firstImage={sofaAfter2}
+         secondImage={sofaBefore2}
          className="h-90  w-full rounded-lg shadow-lg"
          initialSliderPercentage={40}
          slideMode="drag"
