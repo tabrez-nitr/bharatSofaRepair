@@ -1,5 +1,10 @@
 import React from 'react'
 import { Compare } from './ui/Compare'
+import sofaAfter1 from '../assets/After-1.jpeg'
+import sofaBefor1 from '../assets/Before-1.jpeg'
+import sofaAfter2 from '../assets/AfterRepair.jpg'
+import sofaBefore2 from '../assets/BeforeRepair.jpg'
+
 
 function CompareImage() {
   return (

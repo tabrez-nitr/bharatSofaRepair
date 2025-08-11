@@ -1,40 +1,48 @@
 import React from 'react'
 import { Carousel } from './ui/Carousel'
+import woodenSofa from '../assets/GalleryWooden.jpg'
+import reclinerSofa from '../assets/GalleryRecliner.jpg'
+import minimalistSofa from '../assets/GalleryMinimalist.jpg'
+import lshapedSofa from '../assets/GalleryLShaped.jpg'
+import convertibleSofa from '../assets/GalleryConvertible.jpg'
+import colorfulFabrics from '../assets/GalleryColorfulFabrics.jpg'
+import premiumFabrics from '../assets/GalleryPremiumFabrics.jpg'
+import leatherFabrics from '../assets/GalleryLeatherFabric.jpg'
 
 function Gallery() {
    
    const slideData = [
     {
       title: "Wooden Sofa",
-      src: "src/assets/GalleryWooden.jpg",
+      src: woodenSofa,
     },
     {
       title: "Recliner Sofa",
-      src: "src/assets/GalleryRecliner.jpg",
+      src: reclinerSofa,
     },
     {
       title: "Minimalist Sofa",
-      src: "src/assets/GalleryMinimalist.jpg",
+      src: minimalistSofa,
     },
     {
       title: "L-Shaped Sofa",
-      src: "src/assets/GalleryLShaped.jpg",
+      src: lshapedSofa,
     },
      {
       title: "Convertible Sofa",
-      src: "src/assets/GalleryConvertible.jpg",
+      src: convertibleSofa,
     },
      {
       title: "Colorful Fabrics",
-      src: "src/assets/GalleryColorfulFabrics.jpg",
+      src: colorfulFabrics,
     },
      {
       title: "Premium Fabrics",
-      src: "src/assets/GalleryPremiumFabrics.jpg",
+      src: premiumFabrics,
     },
     {
       title: "Leather Fabrics",
-      src: "src/assets/GalleryLeatherFabric.jpg",
+      src: leatherFabrics,
     },
   ];
 

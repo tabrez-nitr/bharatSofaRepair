@@ -1,6 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 // Step 1: Import motion and necessary hooks from framer-motion
 import { motion, useAnimation, useInView } from 'framer-motion';
+import sofaRepair from "../assets/SofaRepair.jpg"
+import newSofa from "../assets/NewSofa.jpg"
+import sofaFabric from "../assets/SofaFabric.jpg"
+
 
 function Services() {
   // Step 2: Set up controls and refs for scroll-triggered animations
@@ -72,7 +76,7 @@ function Services() {
           variants={cardVariants}
         >
           <div className='w-full'>
-            <img src="src/assets/SofaRepair.jpg" alt="Sofa Repair" className='w-full h-52 object-cover rounded-t-2xl' />
+            <img src={sofaRepair} alt="Sofa Repair" className='w-full h-52 object-cover rounded-t-2xl' />
           </div>
           <div className='p-4'>
             <h1 className='text-2xl font-semibold font-mono opacity-70'><i className="ri-tools-fill"></i> Sofa Repair</h1>
@@ -93,7 +97,7 @@ function Services() {
           variants={cardVariants}
         >
           <div className='w-full'>
-            <img src="src/assets/NewSofa.jpg" alt="New Sofa Making" className='w-full h-52 object-cover rounded-t-2xl' />
+            <img src={newSofa} alt="New Sofa Making" className='w-full h-52 object-cover rounded-t-2xl' />
           </div>
           <div className='p-4'>
             <h1 className='text-2xl font-semibold font-mono opacity-70'><i className="ri-armchair-fill"></i> New Sofa Making</h1>
@@ -114,7 +118,7 @@ function Services() {
           variants={cardVariants}
         >
           <div className='w-full'>
-            <img src="src/assets/SofaFabric.jpg" alt="Fabric Change" className='w-full h-52 object-cover rounded-t-2xl' />
+            <img src={sofaFabric} alt="Fabric Change" className='w-full h-52 object-cover rounded-t-2xl' />
           </div>
           <div className='p-4'>
             <h1 className='text-2xl font-semibold font-mono opacity-70'><i className="ri-scissors-cut-fill"></i> Fabric Change</h1>
