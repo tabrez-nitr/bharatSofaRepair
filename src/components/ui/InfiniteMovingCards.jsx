@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { cn } from "../../lib/utils"; 
-
+import { cn } from "../../lib/utils";
 
 export function InfiniteMovingCards({
   items,
@@ -18,21 +17,20 @@ export function InfiniteMovingCards({
 
     const lis = Array.from(scrollerRef.current.children);
 
-    // Prevent duplicating items more than once (especially during hot reload)
+    // Prevent duplicating items more than once
     if (scrollerRef.current.querySelectorAll("li").length === lis.length * 2) {
       setStart(true);
       return;
     }
 
-    // Duplicate list items for seamless infinite scroll effect
+    // Duplicate list items for seamless infinite scroll
     lis.forEach((li) => scrollerRef.current.appendChild(li.cloneNode(true)));
 
-    // Set CSS variables to control animation direction and speed dynamically
+    // Set CSS variables for animation direction & speed
     containerRef.current.style.setProperty(
       "--animation-direction",
       direction === "left" ? "normal" : "reverse"
     );
-
     containerRef.current.style.setProperty(
       "--animation-duration",
       speed === "fast" ? "20s" : speed === "normal" ? "40s" : "80s"
@@ -45,7 +43,8 @@ export function InfiniteMovingCards({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative overflow-hidden",
+        // changed from overflow-hidden to overflow-x-auto to allow manual scrolling
+        "scroller relative overflow-x-auto overflow-y-hidden no-scrollbar", 
         className
       )}
     >

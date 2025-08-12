@@ -56,7 +56,7 @@ function Gallery() {
         </h1>
       </div>
         <div className="relative overflow-hidden w-full h-full py-15">
-      <Carousel slides={slideData} />
+        <Carousel slides={slideData} />
     </div>
     </div>
   )

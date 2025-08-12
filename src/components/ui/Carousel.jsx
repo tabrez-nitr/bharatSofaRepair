@@ -147,6 +147,14 @@ export function Carousel({
     }
   };
 
+   useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 5000); // 5 seconds
+
+    return () => clearInterval(interval);
+  }, [slides.length]);
+
   const id = useId();
 
   return (

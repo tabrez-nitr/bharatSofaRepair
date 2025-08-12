@@ -51,10 +51,7 @@ function AboutUs() {
               15+ Years Of Experience
             </h1>
             <p className="p-3 font-thin">
-              We’ve helped countless homes upgrade their comfort and style. Every sofa
-              is built or repaired with precision, using premium materials and skilled
-              workmanship. Our designs blend durability with timeless elegance,
-              ensuring your sofa stays beautiful for years.
+            We’ve helped countless homes upgrade their comfort and style. Every sofa is crafted or repaired with precision using premium materials. Our designs combine durability and elegance, keeping your sofa beautiful for years.
             </p>
           </div>
         </AnimatedCard>
@@ -88,10 +85,7 @@ function AboutUs() {
               Sofa Makers, Repair Experts
             </h1>
             <p className="p-3 font-thin">
-              Crafting and restoring sofas with precision and care, we combine skilled
-              craftsmanship with premium materials to deliver comfort, style, and
-              durability. Whether it’s building a new piece or giving your old one a
-              fresh life, we ensure every detail reflects our commitment to quality.
+              Crafting and restoring sofas with precision, we blend skilled craftsmanship and premium materials for comfort, style, and durability. Whether creating a new piece or reviving an old one, every detail reflects our commitment to quality.
             </p>
           </div>
         </AnimatedCard>
