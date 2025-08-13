@@ -1,0 +1,46 @@
+import React from 'react'
+import { Compare } from './ui/Compare'
+import sofaAfter1 from '../assets/After-1.jpeg'
+import sofaBefor1 from '../assets/Before-1.jpeg'
+import sofaAfter2 from '../assets/AfterRepair.jpg'
+import sofaBefore2 from '../assets/BeforeRepair.jpg'
+
+
+function CompareImage() {
+  return (
+    <div className='mt-10'>
+          <div className="flex justify-center mt-10 mb-10">
+        <h1 className="text-3xl font-medium opacity-80 border-b-4 border-[#F5DEB3]">
+          Restoration Showcase
+        </h1>
+      </div>
+      <div className='md:flex md:justify-center-safe'>
+        <div className='p-5'>
+         <Compare 
+         firstImage={sofaAfter1.src}
+         secondImage={sofaBefor1.src}
+         className="h-90  w-full md:w-120 rounded-lg shadow-lg"
+         initialSliderPercentage={40}
+         slideMode="drag"
+         showHandlebar={true}
+         />
+         </div>
+
+          <div className='px-5 mt-4'>
+         <Compare 
+         firstImage={sofaAfter2.src}
+         secondImage={sofaBefore2.src}
+         className="h-90  w-full md:w-120 rounded-lg shadow-lg"
+         initialSliderPercentage={40}
+         slideMode="drag"
+         showHandlebar={true}
+         />
+         </div>
+         </div>
+    </div>
+  )
+
+  
+}
+
+export default CompareImage
