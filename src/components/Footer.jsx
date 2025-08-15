@@ -23,7 +23,7 @@ function Footer() {
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={controls}
-      className="bg-[#2C2C2C] rounded-t-2xl text-white-80 flex flex-wrap p-4"
+      className="bg-[#2C2C2C] rounded-t-2xl md:mt-30 text-white-80 flex flex-wrap p-4"
     >
       <section>
         {/* About The Brand */}

@@ -43,7 +43,7 @@ function Reviews() {
 ];
 
   return (
-    <div className='mt-10 mb-5'>
+    <div className='mt-10 md:mt-40 mb-5'>
    <div className='flex justify-center mt-10 mb-10'>
         <h1 className='text-4xl font-medium opacity-80 border-b-4 border-[#F5DEB3]'>Testimonials</h1>
       </div>

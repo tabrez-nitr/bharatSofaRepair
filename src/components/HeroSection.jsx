@@ -39,9 +39,9 @@ function HeroSection() {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop={true}
-        className="h-[38rem] w-full"
+        className="h-[38rem] md:h-screen w-full"
       >
-      <SwiperSlide className="relative h-screen px-7 flex items-center justify-center text-5xl font-bold">
+      <SwiperSlide className="relative h-screen px-7 flex items-center justify-center text-5xl md:text-7xl  font-bold">
   <Image
     src={sofaPhoto1}
     alt="New sofas built to fit your space & style"
@@ -71,7 +71,7 @@ function HeroSection() {
     className="object-cover"
     sizes="100vw"
   />
-  <div className="relative z-10 flex flex-col items-center text-center">
+  <div className="relative z-10 flex md:text-7xl  flex-col items-center text-center">
     <h1 className="mt-30 font-bold opacity-80 mb-3">
       Expert Repairs to Renew Your Sofa
     </h1>
@@ -84,7 +84,7 @@ function HeroSection() {
   </div>
 </SwiperSlide>
 
-<SwiperSlide className="relative h-screen p-7 flex items-center justify-center text-5xl font-bold">
+<SwiperSlide className="relative h-screen p-7 md:text-7xl  flex items-center justify-center text-5xl font-bold">
   <Image
     src={sofaPhoto5}
     alt="Give Your Sofa A Fresh New Look"

@@ -20,76 +20,75 @@ function AboutUs() {
     }, [isInView, controls]);
 
     return (
+      // --- CHANGES HERE ---
+      // 1. `flex-1`: Allows the card to grow and shrink.
+      // 2. `basis-[300px]`: Sets a base width. Cards will wrap when they can't maintain this width.
+      // 3. `max-w-md`: Prevents cards from becoming too wide on large screens.
+      // 4. `flex flex-col`: Ensures content inside the card stacks vertically.
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 40 }}
         animate={controls}
-        className="border-1 border-[black]/20 p-3 rounded-2xl shadow-2xl"
+        className="flex-1 basis-[300px] max-w-md flex flex-col border border-black/20 p-3  rounded-2xl shadow-2xl"
       >
         {children}
       </motion.div>
     );
   }
 
+  // Card data array
+  const cards = [
+    {
+      icon: "15+",
+      iconClasses: "px-8 py-12",
+      title: "15+ Years Of Experience",
+      description:
+        "We’ve helped countless homes upgrade their comfort and style. Every sofa is crafted or repaired with precision using premium materials. Our designs combine durability and elegance, keeping your sofa beautiful for years."
+    },
+    {
+      icon: <i className="ri-team-fill"></i>,
+      iconClasses: "px-11 py-10",
+      title: "Customer-First Approach",
+      description:
+        "We put our customers at the heart of everything we do. From design to delivery, every step is tailored to meet your needs, ensuring comfort, quality, and lasting satisfaction."
+    },
+    {
+      icon: <i className="ri-user-settings-fill"></i>,
+      iconClasses: "px-11 py-10",
+      title: "Sofa Makers, Repair Experts",
+      description:
+        "Crafting and restoring sofas with precision, we blend skilled craftsmanship and premium materials for comfort, style, and durability. Whether creating a new piece or reviving an old one, every detail reflects our commitment to quality."
+    }
+  ];
+
   return (
-    <div id="about">
-      <div className="flex justify-center mt-10">
+    <div id="about md:px-40">
+      <div className="flex justify-center mt-10 md:mt-30 ">
         <h1 className="text-4xl font-medium opacity-80 border-b-4 border-[#F5DEB3]">
           About Us
         </h1>
       </div>
 
-      <div className="flex flex-wrap gap-8  mt-8 p-4">
-        {/* Cards wrapped with AnimatedCard */}
-        <AnimatedCard>
-          <div className="flex justify-center text-5xl">
-            <h1 className="px-8 py-12 opacity-75 font-semibold text-[#DEB887] rounded-[50%] bg-[grey]/10">
-              15+
-            </h1>
-          </div>
-          <div className="mt-4">
-            <h1 className="text-2xl opacity-70 font-semibold text-center">
-              15+ Years Of Experience
-            </h1>
-            <p className="p-3 font-thin">
-            We’ve helped countless homes upgrade their comfort and style. Every sofa is crafted or repaired with precision using premium materials. Our designs combine durability and elegance, keeping your sofa beautiful for years.
-            </p>
-          </div>
-        </AnimatedCard>
-
-        <AnimatedCard>
-          <div className="flex justify-center text-4xl">
-            <h1 className="px-11 py-10 text-5xl opacity-75 font-semibold text-[#DEB887] rounded-[50%] bg-[grey]/10">
-              <i className="ri-team-fill"></i>
-            </h1>
-          </div>
-          <div className="mt-4">
-            <h1 className="text-2xl opacity-80 font-semibold text-center">
-              Customer-First Approach
-            </h1>
-            <p className="p-3 font-thin">
-              We put our customers at the heart of everything we do. From design to
-              delivery, every step is tailored to meet your needs, ensuring comfort,
-              quality, and lasting satisfaction.
-            </p>
-          </div>
-        </AnimatedCard>
-
-        <AnimatedCard>
-          <div className="flex justify-center text-4xl">
-            <h1 className="px-11 py-10 text-5xl opacity-75 font-semibold text-[#DEB887] rounded-[50%] bg-[grey]/10">
-              <i className="ri-user-settings-fill"></i>
-            </h1>
-          </div>
-          <div className="mt-4">
-            <h1 className="text-2xl opacity-80 font-semibold text-center">
-              Sofa Makers, Repair Experts
-            </h1>
-            <p className="p-3 font-thin">
-              Crafting and restoring sofas with precision, we blend skilled craftsmanship and premium materials for comfort, style, and durability. Whether creating a new piece or reviving an old one, every detail reflects our commitment to quality.
-            </p>
-          </div>
-        </AnimatedCard>
+      {/* --- CHANGE HERE --- */}
+      {/* Added `justify-center` to center the cards in the container */}
+      <div className="flex w-full flex-wrap justify-center gap-8 mt-8 p-4">
+        {cards.map((card, index) => (
+          <AnimatedCard key={index}>
+            <div className="flex justify-center text-5xl">
+              <h1
+                className={`opacity-75 font-semibold text-[#DEB887] rounded-[50%] bg-gray-500/10 ${card.iconClasses}`}
+              >
+                {card.icon}
+              </h1>
+            </div>
+            <div className="mt-4">
+              <h1 className="text-2xl opacity-80 font-semibold text-center">
+                {card.title}
+              </h1>
+              <p className="p-3 font-thin">{card.description}</p>
+            </div>
+          </AnimatedCard>
+        ))}
       </div>
     </div>
   );

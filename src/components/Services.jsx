@@ -102,16 +102,16 @@ function Services() {
   };
 
   return (
-    <div id='services' className='mt-15'>
+    <div id='services' className='mt-15 md:mt-45'>
         
-          <div className='flex md:flex md:justify-evenly justify-center mb-8 font-semibold'>
+          <div className='flex md:flex md:justify-evenly justify-center mb-8 md:mb-15 font-semibold'>
         <h1 className='text-4xl border-b-4 border-[#F5DEB3] opacity-75'>Our Services</h1>
       </div>
 
         
         <motion.div
         ref={ref}
-        className='flex flex-wrap gap-6 p-4 md:p-2 justify-center' 
+        className='flex flex-wrap gap-6 md:gap-15 p-4 md:p-2 justify-center' 
         variants={containerVariants}
         initial="hidden"
         animate={controls}

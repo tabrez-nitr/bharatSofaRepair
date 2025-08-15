@@ -8,8 +8,8 @@ import sofaBefore2 from '../assets/BeforeRepair.jpg'
 
 function CompareImage() {
   return (
-    <div className='mt-10'>
-          <div className="flex justify-center mt-10 mb-10">
+    <div className='mt-10 md:mt-40'>
+          <div className="flex justify-center mt-10 mb-10 md:mb-20">
         <h1 className="text-3xl font-medium opacity-80 border-b-4 border-[#F5DEB3]">
           Restoration Showcase
         </h1>
@@ -19,7 +19,7 @@ function CompareImage() {
          <Compare 
          firstImage={sofaAfter1.src}
          secondImage={sofaBefor1.src}
-         className="h-90  w-full md:w-120 rounded-lg shadow-lg"
+         className="h-90  w-full md:w-140 md:h-120 rounded-lg md:shadow-2xl"
          initialSliderPercentage={40}
          slideMode="drag"
          showHandlebar={true}
@@ -30,7 +30,7 @@ function CompareImage() {
          <Compare 
          firstImage={sofaAfter2.src}
          secondImage={sofaBefore2.src}
-         className="h-90  w-full md:w-120 rounded-lg shadow-lg"
+         className="h-90  w-full md:w-140 md:h-120 rounded-lg md:shadow-2xl"
          initialSliderPercentage={40}
          slideMode="drag"
          showHandlebar={true}

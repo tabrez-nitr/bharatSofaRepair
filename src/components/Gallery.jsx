@@ -50,7 +50,7 @@ function Gallery() {
   return (
     <div>
 
-      <div className="flex justify-center mt-15">
+      <div className="flex justify-center mt-15 md:mt-40">
         <h1 className="text-4xl font-medium opacity-80 border-b-4 border-[#F5DEB3]">
           Gallery
         </h1>

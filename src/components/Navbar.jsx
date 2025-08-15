@@ -16,10 +16,28 @@ function Navbar() {
 
     <div>
 
-       <motion.div  className="bg-[#f8d493] z-25  w-full h-[10px] origin-left fixed top-17 left-0"
+       <motion.div  className="bg-[#f8d493] z-25  w-full h-[10px]  origin-left fixed top-17 md:top-16 left-0"
         style={{
           scaleX : scrollYProgress
         }}></motion.div>
+
+        {/* NavBar for medium devices  */}
+        <div className=' relative z-50'>
+          <div className='w-full px-10  h-17 hidden md:block fixed top-0 bg-[#2C2C2C] text-[#F5DEB3] text-[18px] p-3'>
+            <div className='flex justify-between'>
+              <div>
+              <div className="text-xl  font-bold"><i className="ri-sofa-fill"></i>Bharat Sofa Repair<br /><p className='text-[10px] font-normal text-white/80'>Sector-110, Noida</p></div>
+              </div>
+            <ul className='flex gap-5 items-center px-10'>
+             <a href="#home" className="hover:text-[#D4AF37] ">Home</a>
+             <a href="#services" className="hover:text-[#D4AF37]">Services</a>
+             <a href="#about" className="hover:text-[#D4AF37]">About</a> 
+             <a href="#contact" className="hover:text-[#D4AF37]">Contact</a>
+            </ul>
+            </div>
+          </div>
+
+        </div>
 
       {/* NavBar for Mobile Phones  */}
       <div className='relative z-50'>
