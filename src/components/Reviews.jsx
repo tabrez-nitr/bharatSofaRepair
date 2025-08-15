@@ -7,13 +7,13 @@ function Reviews() {
   {
     review: "I got my old sofa repaired recently, and I must say the quality of work is outstanding. The team was professional and completed it on time. My sofa looks almost brand new now!",
     name: "Rahul Sharma",
-    address: "Sector 62, Noida",
+    address: "Vijay Nagar, Noida",
     date: "July 2025",
   },
   {
     review: "The custom fabric options are amazing! I chose a soft velvet fabric for my new sofa, and it feels very luxurious. The finish is neat, and the team was very helpful throughout.",
     name: "Neha Gupta",
-    address: "Sector 18, Noida",
+    address: "Greater Noida, Delhi",
     date: "June 2023",
   },
   {
@@ -25,7 +25,7 @@ function Reviews() {
   {
     review: "I had my sofa reupholstered with new fabric, and it looks fantastic. The fabric quality is premium and the stitching is flawless. Very satisfied with the entire experience.",
     name: "Gazi Abbas",
-    address: "Sector 76, Noida",
+    address: "Surajpur, Noida",
     date: "April 2025",
   },
   {
@@ -37,7 +37,7 @@ function Reviews() {
   {
     review: "Affordable pricing without compromising on quality. The team was polite and hardworking. My sofa now looks stylish and feels much more comfortable after the repair.",
     name: "Anjali Mehta",
-    address: "Sector 137, Noida",
+    address: "Noida Extension, Delhi",
     date: "February 2025",
   },
 ];

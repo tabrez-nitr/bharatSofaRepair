@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Navbar from "@/Navbar";
+import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import Services from "@/components/Services";
 import AboutUs from "@/components/AboutUs";
@@ -31,7 +31,7 @@ export default function Home() {
     <span className="absolute left-1.5 top-1.5 w-11 h-11 rounded-full bg-[#3D74B6] opacity-40 smooth-ripple duration-[3000ms] ease-in-out delay-[500ms]"></span>
 
     {/* Phone button */}
-    <a href="tel:+917846940025">
+    <a href="tel:+918130202786">
       <button className="relative w-14 h-14 bg-white rounded-full shadow-xl flex items-center justify-center">
         <i className="text-2xl text-[#3D74B6] ri-phone-fill"></i>
       </button>
@@ -39,7 +39,7 @@ export default function Home() {
      </div>
    </div>
    {/* whatsapp button  */}
-         <a href="https://wa.me/917846940025?text=Hi%2C%20I%20need%20a%20sofa%20repair%20service" 
+         <a href="https://wa.me/918130202786?text=Hi%2C%20I%20need%20a%20sofa%20repair%20service" 
           target="_blank" rel="noopener noreferrer">
          <button className="w-14 h-14 rounded-full bg-[#25D366] bottom-5 right-5 z-50 fixed">
           <i className="text-4xl  px-1  text-white  ri-whatsapp-line"></i>

@@ -29,9 +29,9 @@ function Footer() {
         {/* About The Brand */}
         <div>
           <h1 className="text-2xl text-[#F5DEB3]">
-            <i className="ri-sofa-fill"></i>Bharat Sofa Service
+            <i className="ri-sofa-fill"></i>Bharat Sofa Repair
           </h1>
-          <p className="text-[10px] font-normal text-white/80">Sector-50 , Noida</p>
+          <p className="text-[10px] font-normal text-white/80">Sector-110, Maharishi Aashram, Noida</p>
           <p className="text-[14px] font-normal text-white/80 mt-3">
             We’re passionate about transforming sofas — whether it’s repairing your old favorite,
             crafting a brand-new design, or refreshing it with premium fabrics. Quality, comfort,
@@ -40,9 +40,10 @@ function Footer() {
         </div>
         <div className="mt-5 flex gap-3 text-3xl ">
           {/* social handels  */}
-          <i className="text-[#F5DEB3] ri-facebook-circle-fill"></i>
-          <i className="text-[#F5DEB3] ri-instagram-fill"></i>
-          <i className="text-[#F5DEB3] ri-whatsapp-fill"></i>
+           <i className="text-[#F5DEB3] ri-facebook-circle-fill"></i>
+         <a href="https://www.instagram.com/naseem_addas/" target="_blank"> <i className="text-[#F5DEB3]  ri-instagram-fill"></i></a>
+          <a href="https://wa.me/918130202786?text=Hi%2C%20I%20need%20a%20sofa%20repair%20service" 
+          target="_blank" rel="noopener noreferrer"> <i className="text-[#F5DEB3] ri-whatsapp-fill"></i></a> 
         </div>
       </section>
 
@@ -73,10 +74,11 @@ function Footer() {
                   <i className="text-[#F5DEB3] text-[18px] ri-map-pin-fill"></i> Sector-50, Noida, New Delhi
                 </p>
                 <p>
-                  <i className="text-[#F5DEB3] text-[18px] ri-phone-fill"></i> +91 7846940025
+                   <a href="tel:+918130202786"><i className="text-[#F5DEB3] text-[18px] ri-phone-fill"></i> +91 8130202786 </a>
                 </p>
                 <p>
-                  <i className="text-[#F5DEB3] text-[18px] ri-mail-fill"></i> tabreznitr@gmail.com
+                  <a href="mailto:bharatsofarepair.in@gmail.com">
+                  <i className="text-[#F5DEB3] text-[18px] ri-mail-fill"></i> bharatsofarepair.in@gmail.com</a>
                 </p>
                 <p>
                   <i className="text-[#F5DEB3] text-[18px] ri-time-fill"></i> Mon-Sun, 9AM - 9PM
