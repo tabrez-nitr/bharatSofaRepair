@@ -6,6 +6,10 @@
 @import 'remixicon/fonts/remixicon.css';
  
 
+
+
+
+
 /* global.css */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
@@ -92,6 +96,18 @@ html {
   opacity: 1 !important;
   transform: scale(1.2);
 }
+
+ /* <uniquifier>: Use a unique and descriptive class name */
+
+.playwrite-in-cursive {
+  font-family: "Playwrite IN", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
 
 
 

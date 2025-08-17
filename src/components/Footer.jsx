@@ -71,7 +71,7 @@ function Footer() {
             <div>
               <div className="text-[13px] mt-3">
                 <p>
-                  <i className="text-[#F5DEB3] text-[18px] ri-map-pin-fill"></i> Sector-50, Noida, New Delhi
+                  <i className="text-[#F5DEB3] text-[18px] ri-map-pin-fill"></i> Sector-110, Maharishi Aashram, Noida
                 </p>
                 <p>
                    <a href="tel:+918130202786"><i className="text-[#F5DEB3] text-[18px] ri-phone-fill"></i> +91 8130202786 </a>

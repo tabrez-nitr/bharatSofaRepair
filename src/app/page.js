@@ -13,6 +13,7 @@ import Head from "next/head";
 
 
 
+
 export default function Home() {
   return (
 
@@ -20,19 +21,10 @@ export default function Home() {
    <div>
 
       <Head>
-        <title>
-           Bharat Sofa Repair | Custom Sofas & Premium Fabric Change
-        </title>
-        {/* Basic SEO Meta  */}
-       <meta name="description" content="Expert sofa repair, custom new sofas & fabric changes since 2009. Quality, comfort, and care in every stitch."/>
-       <meta name="keywords" content="sofa repair, new sofa, sofa fabric change, custom sofas, furniture repair , sofa near me , sofa reapir noida , new sofa noida" />
-       <meta name="author" content="Bharat Sofa Services" />
-
-        {/* Social Sharing */}
-      <meta property="og:title" content="Bharat Sofa Services" />
-      <meta property="og:description" content="Premium sofa repair, custom new sofas, and fabric change services since 2012." />
-      <meta property="og:image" content="src/assets/react.svg" />
-      <meta property="og:type" content="website" />
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+IN:wght@100&display=swap');
+       </style>
+     
       </Head>
 
     {/* phone button */}
