@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
@@ -20,10 +21,38 @@ export default function Home() {
 
    <div>
 
+    <script>
+    {`function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17487093185/a9KWCObAqogbEMG7v5JB',
+      'value': 15000.0,
+      'currency': 'INR',
+      'event_callback': callback
+  });
+  return false;
+} `}
+</script>
+
       <Head>
         <style>
          {` @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+IN:wght@100&display=swap')` };
        </style>
+       {/* Google tag (gtag.js) */}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17487093185"></script>
+      <script>
+        {`
+     window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17487093185');
+        `}
+</script>
      
       </Head>
 
@@ -40,7 +69,7 @@ export default function Home() {
     <span className="absolute left-1.5 top-1.5 w-11 h-11 rounded-full bg-[#3D74B6] opacity-40 smooth-ripple duration-[3000ms] ease-in-out delay-[500ms]"></span>
 
     {/* Phone button */}
-    <a href="tel:+918130202786">
+    <a href="tel:+918130202786" onClick={()=> gtag_report_conversion('tel:+918130202786')}>
       <button className="relative w-14 h-14 bg-white rounded-full shadow-xl flex items-center justify-center">
         <i className="text-2xl text-[#3D74B6] ri-phone-fill"></i>
       </button>

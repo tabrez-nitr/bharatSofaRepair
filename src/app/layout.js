@@ -78,7 +78,7 @@ export const metadata = {
   // Social Sharing (Open Graph)
   openGraph: {
     title: 'Bharat Sofa Services',
-    description: 'Premium sofa repair, custom new sofas, and fabric change services since 2012.',
+    description: 'Premium sofa repair, custom new sofas, and fabric change services since 2009.',
     images: '/og-image.png', // Must be an absolute path from the `public` folder
     type: 'website',
   },
