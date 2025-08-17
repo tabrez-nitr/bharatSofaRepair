@@ -22,7 +22,7 @@ export default function Home() {
 
       <Head>
         <style>
-          @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+IN:wght@100&display=swap');
+         {` @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+IN:wght@100&display=swap')` };
        </style>
      
       </Head>
