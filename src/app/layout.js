@@ -71,7 +71,43 @@ export const metadata = {
     'wooden sofa polishing price in Noida',
     'get a new sofa made to order',
     'old sofa repair and service',
-    'professional sofa cleaning and polishing'
+    'professional sofa cleaning and polishing',
+
+     // Noida Specific
+    'sofa repair in Noida Sector 18',
+    'custom sofa maker in Noida Sector 62',
+    'sofa polishing in Noida Sector 50',
+    'fabric change service in Noida Sector 75',
+    'couch repair in Noida Sector 137',
+    'furniture reupholstery Noida Sector 110',
+    'sofa service in Noida Expressway',
+    'sofa repair Atta Market Noida',
+
+    // Gurugram Specific
+    'sofa repair in DLF Phase 1',
+    'custom sofa maker in DLF Phase 4',
+    'sofa polishing in Sushant Lok 1',
+    'fabric change service in Nirvana Country',
+    'couch repair on Golf Course Road',
+    'furniture reupholstery on Sohna Road',
+    'sofa service in Gurugram Sector 56',
+    'leather sofa repair in Palam Vihar',
+    'sofa repair South City 2 Gurugram',
+
+    // Ghaziabad Specific
+    'sofa repair in Indirapuram',
+    'custom sofa maker in Vaishali',
+    'sofa polishing in Vasundhara Ghaziabad',
+    'fabric change service in Raj Nagar Extension',
+    'couch repair in Kaushambi',
+    'furniture reupholstery in Crossing Republik',
+    'sofa service in Kavi Nagar Ghaziabad',
+
+    // Generic Local
+    'local sofa repair service',
+    'doorstep sofa repair Noida',
+    'best sofa makers in Gurugram',
+    'affordable furniture polish in Ghaziabad'
   ],
   authors: [{ name: 'Bharat Sofa Services' }],
 

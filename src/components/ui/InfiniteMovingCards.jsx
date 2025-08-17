@@ -64,6 +64,9 @@ export function InfiniteMovingCards({
           >
             <blockquote>
               <div className="flex flex-col justify-between h-full">
+                <div>
+                {item.stars}
+                </div>
                 <span className="text-[15px] text-black/70">{item.review}</span>
                 <div className="mt-4 flex flex-col text-sm text-neutral-600">
                   <span className="text-xl text-[black]/80">{item.name}</span>
