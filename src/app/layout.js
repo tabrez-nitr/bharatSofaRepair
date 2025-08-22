@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from '@vercel/analytics/next';
 
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -17,7 +18,10 @@ const geistMono = Geist_Mono({
 export const metadata = {
   // Title and Basic SEO
   title: 'Expert Sofa Repair in Noida & Gurugram | Custom Sofas',
-  description: 'Top-rated sofa repair, custom new sofas, and fabric changes in Noida, Gurugram & Ghaziabad. Quality craftsmanship and doorstep service. Get a free quote!',
+  icons: {
+       icon :  '/icon.jpg'
+  },
+  description: 'Top-rated sofa repair, custom new sofas, and fabric changes in Noida, Ghaziabad. Quality craftsmanship and doorstep service. Get a free quote!',
    keywords: [
     // Core Services
     'sofa repair',
