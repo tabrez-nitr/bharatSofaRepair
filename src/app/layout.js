@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   // Title and Basic SEO
-  title: 'Expert Sofa Repair in Noida & Gurugram | Custom Sofas',
+  title: 'Expert Sofa Repair in Noida & Ghaziabad | Custom Sofas',
   icons: {
        icon :  '/icon.jpg'
   },
