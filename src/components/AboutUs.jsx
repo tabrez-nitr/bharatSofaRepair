@@ -26,10 +26,11 @@ function AboutUs() {
       // 3. `max-w-md`: Prevents cards from becoming too wide on large screens.
       // 4. `flex flex-col`: Ensures content inside the card stacks vertically.
       <motion.div
+        id="about"
         ref={ref}
         initial={{ opacity: 0, y: 40 }}
         animate={controls}
-        className="flex-1 basis-[300px] max-w-md flex flex-col border border-black/20 p-3  rounded-2xl shadow-2xl"
+        className=" flex-1 basis-[300px] max-w-md flex flex-col border border-black/20 p-3  rounded-2xl shadow-2xl"
       >
         {children}
       </motion.div>
