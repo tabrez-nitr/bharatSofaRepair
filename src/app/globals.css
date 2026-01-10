@@ -1,0 +1,117 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+@import "tailwindcss";
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import 'remixicon/fonts/remixicon.css';
+ 
+
+
+
+
+
+/* global.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+/* smooth scroll effect while navigating  */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* infinte scroll */
+:root {
+  --animation-duration: 40s;
+  --animation-direction: normal;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation-name: scroll;
+  animation-duration: var(--animation-duration);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: var(--animation-direction);
+}
+
+
+
+@keyframes soft-ripple {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.2;
+  }
+  70% {
+    transform: scale(1.7);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.smooth-ripple {
+  animation: soft-ripple 2s ease-in-out infinite;
+}
+
+
+ /* .swiper-button-next,
+ .swiper-button-prev  */
+  /* color: #F5DEB3  !important; /* For text-based arrows */
+  /* filter: brightness(0) invert(1); Turns black arrow to white */ 
+
+
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+/* Active pagination dot */
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  margin: 0 6px !important;
+  background-color: white !important;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #F5DEB3 !important;
+  opacity: 1 !important;
+  transform: scale(1.2);
+}
+
+ /* <uniquifier>: Use a unique and descriptive class name */
+
+.playwrite-in-cursive {
+  font-family: "Playwrite IN", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+/* pagination color  */
+
